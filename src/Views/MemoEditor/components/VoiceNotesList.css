@@ -1,0 +1,16 @@
+.voice-notes-list {
+  margin-top: 24px;
+}
+
+.voice-notes-list__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 16px;
+}
+
+.voice-notes-list__items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+} 

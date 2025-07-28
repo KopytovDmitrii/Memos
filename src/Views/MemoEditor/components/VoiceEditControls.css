@@ -1,0 +1,9 @@
+.voice-edit-controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 17px;
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+} 

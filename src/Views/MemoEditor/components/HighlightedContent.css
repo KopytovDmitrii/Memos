@@ -1,0 +1,47 @@
+.highlighted-content {
+  flex: 1;
+  min-height: 400px;
+  padding: 16px;
+  position: relative;
+  overflow: visible;
+}
+
+.highlighted-content__display {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #1F2937;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.highlighted-text {
+  background-color: #3498db;
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  position: relative;
+}
+
+.highlighted-text:hover {
+  background-color: #2980b9;
+}
+
+.highlighted-content__tooltip {
+  background: #2c3e50;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.highlighted-content__tooltip:hover {
+  background: #34495e;
+} 

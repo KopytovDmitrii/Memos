@@ -1,0 +1,25 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo__icon-wrapper {
+  width: 40px;
+  height: 40px;
+  background-color: #2563EB;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+
+.logo__icon {
+  width: 13.5px;
+  height: 18px;
+}
+
+.logo__text {
+  color: #111827;
+} 

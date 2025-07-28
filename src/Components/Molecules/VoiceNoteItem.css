@@ -1,0 +1,81 @@
+.voice-note-item {
+  display: flex;
+  flex-direction: column;
+  padding: 17px;
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.voice-note-item__main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.voice-note-item__content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.voice-note-item__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.voice-note-item__title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1F2937;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.voice-note-item__meta {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #6B7280;
+  margin: 0;
+}
+
+.voice-note-item__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.voice-note-item__progress-container {
+  background: #F9FAFB;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 0 -17px -17px -17px;
+}
+
+.voice-note-item__progress {
+  width: 100%;
+  height: 4px;
+  background: #E5E7EB;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.voice-note-item__progress-bar {
+  height: 100%;
+  background: #2563EB;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+} 

@@ -1,0 +1,106 @@
+.circular-button {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.144);
+}
+
+.circular-button:hover {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.216);
+}
+
+.circular-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.circular-button__icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+/* Размеры иконок для разных размеров кнопок */
+.circular-button--small .circular-button__icon {
+  width: 14px;
+  height: 14px;
+}
+
+.circular-button--medium .circular-button__icon {
+  width: 16px;
+  height: 16px;
+}
+
+.circular-button--large .circular-button__icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Размеры */
+.circular-button--small {
+  width: 30px;
+  height: 30px;
+}
+
+.circular-button--medium {
+  width: 40px;
+  height: 40px;
+}
+
+.circular-button--large {
+  width: 48px;
+  height: 48px;
+}
+
+/* Цвета */
+.circular-button--primary {
+  background: #2563EB;
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1), 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+.circular-button--primary:hover:not(:disabled) {
+  background: #1D4ED8;
+  transform: translateY(-2px);
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.15), 0px 6px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.circular-button--secondary {
+  background: #DBEAFE;
+}
+
+.circular-button--secondary:hover:not(:disabled) {
+  background: #BFDBFE;
+}
+
+.circular-button--danger {
+  background: #EF4444;
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.1), 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+.circular-button--danger:hover:not(:disabled) {
+  background: #DC2626;
+  transform: translateY(-2px);
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.15), 0px 6px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.circular-button--transparent {
+  background: transparent;
+}
+
+.circular-button--transparent:hover:not(:disabled) {
+  background: #F3F4F6;
+}
+
+/* Для кнопок без белой иконки */
+.circular-button--secondary .circular-button__icon,
+.circular-button--transparent .circular-button__icon {
+  filter: none;
+} 

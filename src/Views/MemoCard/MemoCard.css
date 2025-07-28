@@ -1,0 +1,23 @@
+.memo-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  transition: all 0.2s ease;
+}
+
+.memo-card:hover {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.memo-card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.memo-card__info {
+  flex: 1;
+  margin-right: 16px;
+} 

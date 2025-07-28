@@ -1,0 +1,12 @@
+---
+alwaysApply: true
+---
+При работе с front-end задачами используй 
+
+1. React - для создания компонентов. Используем последнюю версию. для навигации по страницам используй react-router
+2. async/await code - при длительных обработках
+3. [SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) - для работы с голосом. (@SpeechRecognition - было добавлено к документации в cursor - оперируй этой документацией)
+4. IndexedDb - для хранения пользовательстких данных
+5. Unit tests - для функций необходимо писать тесты. Где это нужно - покрыйвай тестами
+6. Зависимости сразу указываем в package.json
+7. НЕ ИСПОЛЬЗУЙ ВРЕМЕННЫЕ РЕШЕНИЕ! Решения должны быть production ready

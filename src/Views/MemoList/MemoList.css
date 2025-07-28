@@ -1,0 +1,55 @@
+.memo-list {
+  flex: 1;
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  width: 100%;
+}
+
+.memo-list__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.memo-list__title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #111827;
+  margin: 0;
+}
+
+.memo-list__count {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #6B7280;
+  margin: 0;
+}
+
+.memo-list__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.memo-list__items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.memo-list__item {
+  width: 100%;
+}
+
+.memo-list__empty-state {
+  text-align: center;
+  width: 100%;
+} 
