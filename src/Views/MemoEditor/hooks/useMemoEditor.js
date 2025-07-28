@@ -7,7 +7,7 @@ export const useMemoEditor = (id, existingMemo) => {
   const navigate = useNavigate();
   const { createMemo, updateMemo, deleteMemo } = useMemos();
   
-  const isNewMemo = id === 'new';
+  const isNewMemo = id === 'new' || id === undefined || !id;
   
   const initialMemoState = {
     id: id || 'new',
@@ -64,19 +64,19 @@ export const useMemoEditor = (id, existingMemo) => {
       
       setHasUnsavedChanges(hasChanges);
     } else if (isNewMemo) {
-      // Для новых заметок сравниваем с начальным состоянием
-      const hasChanges = 
-        memo.title !== initialMemo.title ||
-        memo.content !== initialMemo.content ||
-        JSON.stringify(memo.voiceNotes) !== JSON.stringify(initialMemo.voiceNotes);
+      // Для новых заметок кнопка активна, если есть хоть какой-то контент
+      const hasContent = 
+        memo.title.trim() !== '' ||
+        memo.content.trim() !== '' ||
+        memo.voiceNotes.length > 0;
       
-      setHasUnsavedChanges(hasChanges);
+      setHasUnsavedChanges(hasContent);
     } else {
       // Для существующих заметок, которые еще не были сохранены в этой сессии
       // Кнопка должна быть неактивна, пока не будет изменений
       setHasUnsavedChanges(false);
     }
-  }, [memo, savedMemo, initialMemo, isNewMemo]);
+  }, [memo, savedMemo, isNewMemo]);
 
   const handleSave = useCallback(async () => {
     if (isSavingLocal) return;
